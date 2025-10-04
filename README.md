@@ -4,6 +4,6 @@ This is my personal portfolio website.It showcases who I am, my skills,projects 
 
 This Website is built using :HTML,CSS,JS and React.
 
-### Live Website
-[You can view the live portfolio here:]
-                            (https://nejitha.github.io/portfolio/)
+### Live Website:-
+                
+  [You can view the live portfolio here!!](https://nejitha.github.io/portfolio/)
