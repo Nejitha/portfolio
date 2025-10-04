@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nejitha Sulfikkar Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+
+  <div id="root"></div>
+
+  <script>
+    function App() {
+      return React.createElement(
+        "div",
+        { className: "container" },
+
+        React.createElement("h3", { className: "welcome" }, "Welcome to my Portfolio!!!"),
+        React.createElement("h1", null, "NEJITHA SULFIKKAR"),
+        React.createElement("h2", null, "CSE student"),
+
+        // About Section
+        React.createElement(
+          "div",
+          { className: "section about" },
+          React.createElement("h2", null, "About Me"),
+          React.createElement("p", null, "I am a 3rd year btech CSE student. I enjoy creating clean, responsive, and user-friendly applications. I am always eager to learn new technologies and improve my skills.")
+        ),
+
+        // Skills Section
+        React.createElement(
+          "div",
+          { className: "section skills" },
+          React.createElement("h2", null, "Skills"),
+          React.createElement(
+            "div",
+            { className: "skills-list" },
+            React.createElement("div", { className: "skill" }, "Python"),
+            React.createElement("div", { className: "skill" }, "C"),
+            React.createElement("div", { className: "skill" }, "Java"),
+            React.createElement("div", { className: "skill" }, "Problem Solving"),
+            React.createElement("div", { className: "skill" }, "Team Work")
+          )
+        ),
+
+        // Projects Section
+        React.createElement(
+          "div",
+          { className: "section projects" },
+          React.createElement("h2", null, "Projects"),
+          React.createElement(
+            "div",
+            { className: "projects-list" },
+            React.createElement(
+              "div",
+              { className: "project" },
+              React.createElement("h3", null, "Egg Timer"),
+              React.createElement("p", null, "A simple timer app to track time efficiently.")
+            ),
+            React.createElement(
+              "div",
+              { className: "project" },
+              React.createElement("h3", null, "Birthday Card"),
+              React.createElement("p", null, "A creative web-based birthday card project.")
+            )
+          )
+        ),
+
+        // Thanks Section
+        React.createElement("p", { className: "thanks" }, "Thanks for visiting my portfolio!")
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(React.createElement(App));
+  </script>
+
+</body>
+</html>
